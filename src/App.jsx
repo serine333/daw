@@ -2,14 +2,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"; 
 import Submission from "./pages/submission";
-import DashboardContent from "./pages/DashboardContent";
 import AuthorOverview from './pages/AuthorOverview';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Home from './pages/Home';
 import Events from './pages/Events';
 import Participant from './pages/Participant';
-
+import Myevent from './pages/Myevent';
 export default function App() {
   return (
     <Router>
@@ -23,7 +22,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/events" element={<Events />} />
             <Route path="/participant" element={<Participant />} />
-            <Route path="/myevent" element={<DashboardContent />} />
+            <Route path="/Myevent" element={<Myevent />} />
             <Route path="/dashboard" element={<AuthorOverview />} />
             <Route path="/submit" element={<Submission />} />
             <Route path="/login" element={<Login />} />
